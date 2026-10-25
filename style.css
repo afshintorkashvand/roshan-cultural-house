@@ -1,0 +1,11 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "IRAN Rounded";
+}
+@font-face {
+    font-family: "IRAN Rounded";
+    src: url(/font/IRAN\ Rounded.ttf) format("truetype");
+}
