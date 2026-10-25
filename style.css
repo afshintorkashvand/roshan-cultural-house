@@ -10,9 +10,10 @@
     font-family: "IRAN Rounded";
     src: url(/font/IRAN\ Rounded.ttf) format("truetype");
 } */
-body{
+body {
     font-size: 16px;
 }
+
 .container {
     display: flex;
     flex-direction: column;
@@ -28,6 +29,10 @@ body{
     h1 {
         color: #f5f6fa;
         font-size: 0.8rem;
+
+        @media (min-width:768px) {
+            font-size: 1.6rem;
+        }
     }
 }
 
@@ -44,6 +49,10 @@ body{
     color: #f5f6fa;
     cursor: pointer;
     font-size: 0.6rem;
+
+    @media (min-width:768px) {
+        font-size: 1.2rem;
+    }
 }
 
 .main-content {
@@ -65,11 +74,19 @@ body{
     h2 {
         color: #1b314d;
         font-size: 1rem;
+
+        @media (min-width:768px) {
+            font-size: 1.6rem;
+        }
     }
 
     p {
         font-size: 0.6rem;
         color: #5e636c;
+
+        @media (min-width:768px) {
+            font-size: 1.2rem;
+        }
     }
 
 }
@@ -103,6 +120,10 @@ body{
     p {
         font-size: 0.6rem;
         color: #5e636c;
+
+        @media (min-width:768px) {
+            font-size: 1.2rem;
+        }
     }
 }
 
@@ -123,6 +144,10 @@ body{
         color: #7f8994;
         font-size: 0.6rem;
         line-height: 1.5;
+
+        @media (min-width:768px) {
+            font-size: 1.2rem;
+        }
     }
 }
 
@@ -141,6 +166,10 @@ td {
     text-align: right;
     color: #272d38;
     font-size: 0.7rem;
+
+    @media (min-width:768px) {
+        font-size: 1.3rem;
+    }
 }
 
 .bg-tr-first {
@@ -161,17 +190,25 @@ td {
     }
 
 }
-.form{
-    padding:10px;
+
+.form {
+    padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 14px;
 }
-label, legend{
+
+label,
+legend {
     font-weight: bold;
     font-size: 0.8rem;
+
+    @media (min-width:768px) {
+        font-size: 1rem;
+    }
 }
-legend{
+
+legend {
     padding-right: 10px;
 }
 
@@ -189,9 +226,11 @@ input {
     display: block;
     width: 100%;
 }
-textarea{
+
+textarea {
     width: 100%;
 }
+
 .span_ompulsion {
     font-weight: bold;
     color: #5c7490;
@@ -202,26 +241,29 @@ textarea{
     font-weight: bold;
 
 }
-.time{
-    
+
+.time {
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #ffffff;
     border-radius: 6px;
-        align-items: center;
-        border: 2px solid #c7d0db;
+    align-items: center;
+    border: 2px solid #c7d0db;
     gap: 5px;
     padding: 8px;
-    .in-fieldset{
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr 1fr;
-    direction: ltr;
+
+    .in-fieldset {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        direction: ltr;
         width: fit-content;
     }
 
 }
-.love{
+
+.love {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #ffffff;
@@ -230,48 +272,67 @@ textarea{
     align-items: center;
     gap: 5px;
     padding: 8px;
-    .in-fieldset{
-    display: grid;
-    gap: 8px;
-    grid-template-columns: 1fr 1fr;
-    direction: ltr;
+
+    .in-fieldset {
+        display: grid;
+        gap: 8px;
+        grid-template-columns: 1fr 1fr;
+        direction: ltr;
         width: fit-content;
     }
 }
 
-.experience{
+.experience {
     border: 2px solid #c7d0db;
     background-color: #fafbfe;
     border-radius: 6px;
 }
-.textarea{
+
+.textarea {
 
     border: 2px solid #c7d0db;
     background-color: #fafbfe;
     border-radius: 6px;
 }
-.down-textarea{
+
+.down-textarea {
     color: #596574;
     font-size: 13px;
+
+    @media (min-width:768px) {
+        font-size: 1rem;
+    }
 }
-.rules{
+
+.rules {
     display: flex;
     gap: 10px;
     font-size: 0.8rem;
-    input{
+
+    @media (min-width:768px) {
+        font-size: 1.3rem;
+    }
+
+    input {
         width: fit-content;
     }
 
 }
-.rules-down-p{
+
+.rules-down-p {
     border: 1px solid #dfc8a0;
     background-color: #f7f1e6;
     border-right: 2px solid #b07929;
     color: #373839;
     padding: 8px 5px;
     font-size: 0.7rem;
+
+    @media (min-width:768px) {
+        font-size: 1.2rem;
+    }
 }
-.btn-send{
+
+.btn-send {
     all: unset;
     color: #eeeff1;
     font-weight: bold;
@@ -280,25 +341,35 @@ textarea{
     border-radius: 6px;
     font-size: 0.6rem;
     width: fit-content;
+
+    @media (min-width:768px) {
+        font-size: 1.2rem;
+    }
 }
-.footer{
-    
+
+.footer {
+
     display: flex;
     flex-direction: column;
     gap: 15px;
     padding: 12px;
-    p{
+
+    p {
         padding: 8px 0;
         border-top: 1px solid #c7d0db;
         color: #88919d;
         font-weight: bold;
         font-size: 0.8rem;
+
+        @media (min-width:768px) {
+            font-size: 1.3rem;
+        }
     }
 }
 
 
-.call{
-    
+.call {
+
     background-color: #ffffff;
     border: 1px solid #d4dbe3;
     border-radius: 6px;
@@ -306,11 +377,31 @@ textarea{
     display: flex;
     flex-direction: column;
     gap: 7px;
+
     h3 {
         color: #2b4a6e;
     }
-    a{
+
+    a {
         color: #617083;
         font-size: 0.8rem;
+
+        @media (min-width:768px) {
+            font-size: 1.3rem;
+        }
     }
+}
+
+@media (min-width:768px) {
+    .main-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .content {
+        display: grid;
+        height: 100%;
+    }
+
 }
